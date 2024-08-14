@@ -588,3 +588,38 @@ footer p {
 }
 
 
+/* This media query applies to screens with a maximum width of 768px (common for tablets and mobile phones) */
+@media only screen and (max-width: 768px) {
+  /* Adjust the container width for mobile */
+  .container {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  /* Ensure columns stack vertically */
+  .column {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  /* Center-align text and other elements */
+  .header-text, .footer-text {
+      text-align: center;
+  }
+
+  /* Adjust image sizes */
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Adjust any other elements as necessary for mobile */
+  .navbar {
+      flex-direction: column;
+  }
+
+  .menu-item {
+      padding: 10px 0;
+      text-align: center;
+  }
+}
